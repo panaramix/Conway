@@ -16,6 +16,8 @@ public class Cell extends Rectangle {
  
 	public boolean isAlive;
 	public Rectangle rect;
+	public int xCoord;
+	public int yCoord;
 	
 	/**
 	 * Constructor.
@@ -25,9 +27,11 @@ public class Cell extends Rectangle {
 	 * @param size The size of the cell
 	 * */
 	
-	public Cell(int x, int y, int size){
+	public Cell(int x, int y, int size, int xCoor, int yCoor){
 		rect = new Rectangle (x, y, size, size);
 		isAlive = false;
+		xCoord = xCoor;
+		yCoord = yCoor;
 	}
 }
 
